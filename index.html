@@ -21,19 +21,19 @@
             <img class="small" src="img/logo-small.svg" alt="logo-s">
         </div>
         <div class="menu gray">
-            <div class="big"><img class="menu-icon big" src="img/home.svg" alt="home"> Home</div>
-            <div class="small"><img class="menu-icon" src="img/home.svg" alt="home"></div>
-            <div class="big"><img class="menu-icon big" src="img/search.svg" alt=""> Cerca</div>
-            <div class="small"><img class="menu-icon" src="img/search.svg" alt=""></div>
-            <div class="big"><img class="menu-icon big" src="img/libreria.svg" alt=""> La tua libreria</div>
-            <div class="small"><img class="menu-icon" src="img/libreria.svg" alt=""></div>
+            <a class="home big" href=""><img class="menu-icon big" src="img/home.svg" alt="home"> Home</a>
+            <a class="home small" href=""><img class="menu-icon" src="img/home.svg" alt="home"></a>
+            <a class="big" href=""><img class="menu-icon big" src="img/search.svg" alt=""> Cerca</a>
+            <a class="small" href=""><img class="menu-icon" src="img/search.svg" alt=""></a>
+            <a class="big" href=""><img class="menu-icon big" src="img/libreria.svg" alt=""> La tua libreria</a>
+            <a class="small" href=""><img class="menu-icon" src="img/libreria.svg" alt=""></a>       
         </div>
         <div class="playlist big"> 
             <h3 class="white playlist-title">PLAYLIST</h3>
             <div class="add">
                 <div class="square"></div>
-                <i class="fa-solid fa-plus "></i>
-                <p class="gray">Crea Playlist</p>
+                <a href=""><i class="fa-solid fa-plus "></i></a>
+                <a href=""><p class="gray">Crea Playlist</p></a>
             </div>
             <ul class="gray">
                 <li>Nome playlist</li>
@@ -73,31 +73,37 @@
             <section class="music">
                 <div class="cover">
                     <img src="img/metal_lifting.jpg" alt="metal">
+                    <img class="play-btn" src="http://drh.img.digitalriver.com/DRHM/Storefront/Site/atvi/cm/images/site/play-button-overlay.png" alt="">
                     <h3 class="white">Heavy Metal</h3>
                     <p class="gray">Subtitle</p>
                 </div>
                 <div class="cover">
                     <img src="img/stranger.jpeg" alt="stranger">
+                    <img class="play-btn" src="http://drh.img.digitalriver.com/DRHM/Storefront/Site/atvi/cm/images/site/play-button-overlay.png" alt="">
                     <h3 class="white">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack</h3>
                     <p class="gray">Kyle Dixon & Michael Stein</p>
                 </div>
                 <div class="cover">
                     <img src="img/aquietplace.jpeg" alt="quiet">
+                    <img class="play-btn" src="http://drh.img.digitalriver.com/DRHM/Storefront/Site/atvi/cm/images/site/play-button-overlay.png" alt="">
                     <h3 class="white">A quiet place</h3>
                     <p class="gray">Subtitle</p>
                 </div>
                 <div class="cover">
                     <img src="img/split.jpeg" alt="split">
+                    <img class="play-btn" src="http://drh.img.digitalriver.com/DRHM/Storefront/Site/atvi/cm/images/site/play-button-overlay.png" alt="">
                     <h3 class="white">Heavy Metal</h3>
                     <p class="gray">Subtitle</p>
                 </div>
                 <div class="cover">
                     <img src="img/cure.jpeg" alt="cure">
+                    <img class="play-btn" src="http://drh.img.digitalriver.com/DRHM/Storefront/Site/atvi/cm/images/site/play-button-overlay.png" alt="">
                     <h3 class="white">A cure for wellnes</h3>
                     <p class="gray">Subtitle</p>
                 </div>
                 <div class="cover">
                     <img src="img/sinister.jpeg" alt="sinister">
+                    <img class="play-btn" src="http://drh.img.digitalriver.com/DRHM/Storefront/Site/atvi/cm/images/site/play-button-overlay.png" alt="">
                     <h3 class="white">Sinister</h3>
                     <p class="gray">Subtitle</p>
                 </div>
@@ -108,10 +114,12 @@
                 <div class="mix">
                     <div class="cover">
                         <img src="img/radar.jpeg" alt="radar">
+                        <img class="play-btn" src="http://drh.img.digitalriver.com/DRHM/Storefront/Site/atvi/cm/images/site/play-button-overlay.png" alt="">
                         <h3 class="white">Release Radar</h3>
                     </div>
                     <div class="cover">
                         <img src="img/mixdaily.jpeg" alt="mix">
+                        <img class="play-btn" src="http://drh.img.digitalriver.com/DRHM/Storefront/Site/atvi/cm/images/site/play-button-overlay.png" alt="">
                         <h3 class="white">Daily Mix</h3>
                     </div>
                 </div>
@@ -122,10 +130,12 @@
                 <div class="artisti">
                     <div class="cover">
                         <img src="img/youg.jpeg" alt="lana">
+                        <img class="play-btn" src="http://drh.img.digitalriver.com/DRHM/Storefront/Site/atvi/cm/images/site/play-button-overlay.png" alt="">
                         <h3 class="white">Lana Del Rey</h3>
                     </div>
                     <div class="cover">
                         <img src="img/einaudi.jpeg" alt="einaudi">
+                        <img class="play-btn" src="http://drh.img.digitalriver.com/DRHM/Storefront/Site/atvi/cm/images/site/play-button-overlay.png" alt="">
                         <h3 class="white">Einaudi</h3>
                     </div>
                 </div>
@@ -135,7 +145,7 @@
     <!-- footer -->
     <footer>
         <div class="player">
-            <div class="brano s">
+            <div id="big" class="brano s">
                 <div class="brano-img">
                     <img src="img/sinister.jpeg" alt="sinister">
                     <div class="brano-text">
@@ -151,29 +161,34 @@
             <div class="play l">
                 <div class="comandi">
                     <ul class="white">
-                        <li><i class="fa-solid fa-shuffle"></i></li>
-                        <li><i class="fa-solid fa-backward-step"></i></li>
-                        <li><i class="fa-regular fa-circle-play bigger"></i></li>
-                        <li><i class="fa-solid fa-forward-step"></i></li>
-                        <li><i class="fa-solid fa-arrow-rotate-right"></i></li>
+                        <li><a href=""><i class="fa-solid fa-shuffle"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-backward-step"></i></a></li>
+                        <li><a href=""><i class="fa-regular fa-circle-play bigger"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-forward-step"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-arrow-rotate-right"></i></a></li>
                     </ul>
                 </div>
                 <div class="barra">
                     <p class="white min">0:25</p>
                     <div class="bar-gray">
-                        <div class="bar-white"></div>
+
+                        <div class="bar-white">
+                            <span class="circle"><i class="fa-solid fa-circle white"></i></span>
+                        </div>
                     </div>
                     <p class="white min">4:35</p>
-                    <span class="circle"><i class="fa-solid fa-circle white"></i></span>
+                   
 
                 </div>
             </div>
-            <div class="volume s">
-                <div><i class="fa-solid fa-bars white"></i></div>
-                <div><i class="fa-solid fa-display white"></i></div>
-                <div><i class="fa-solid fa-volume-high white"></i></div>
+            <div id="big" class="volume s">
+                <div><a href=""><i class="fa-solid fa-bars white"></i></a></div>
+                <div><a href=""><i class="fa-solid fa-display white"></i></a></div>
+                <div><a href=""><i class="fa-solid fa-volume-high white"></i></a></div>
                 <div class="volume-bar-gray">
-                    <div class="volume-bar-white"></div>
+                    <div class="volume-bar-white">
+                        <span class="circle"><i class="fa-solid fa-circle white"></i></span>
+                    </div>
                 </div>
             </div>
         </div>

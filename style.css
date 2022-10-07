@@ -62,8 +62,16 @@ aside .icon{
 aside .small{
     display: none;
 }
-aside .menu div{
-    padding: 0 0 1rem 1rem;
+aside .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 0 1rem 1rem;
+}
+aside .menu a{
+    text-decoration: none;
+    color: #878787;
 }
 aside .menu .menu-icon{
     width: 10%;
@@ -91,8 +99,8 @@ aside .add i{
     color: #ADFF2F;
 }
 aside .add p{
-    height: 50px;
-    margin-top: auto;
+    padding-top: 20%;
+    color: #878787 ;
 }
 aside .download{
     position: absolute;
@@ -159,6 +167,9 @@ nav ul{
     gap: 2rem;
     margin-bottom: 2.5rem;
 }
+nav ul li a{
+    border-bottom: 2px solid #141922;
+}
 main .music{
     display: flex;
     flex-direction: row;
@@ -169,9 +180,17 @@ main .music{
 main .cover{
     text-align: center;
     flex-basis:calc((100% - 5rem) / 6 ) ;
+    position: relative;
 }
 main .cover img{
     width:100%; 
+}
+main .cover .play-btn{
+    position: absolute;
+    top:8px;
+    left: 5px;
+    z-index: 1;
+    display: none;
 }
 main .music .cover h3{
     margin-bottom: 0.5rem;
@@ -259,6 +278,9 @@ footer .player .play ul{
     align-items: center;
     padding-left: 0;
 }
+footer .player .play a{
+    color: white;
+}
 footer .player .barra{
     position: relative;
     display: flex;
@@ -275,15 +297,17 @@ footer .player .barra .bar-gray{
     background-color: #878787;
 }
 footer .player .barra .bar-white{
+    text-align: end;
     width: 115px;
     border: white solid 3px;
     border-radius: 10px;
     background-color: white;
+    position: relative;
 }
 footer .player .barra .circle{
     position: absolute;
-    right: 333px;
-    /* display: none; */
+    bottom: -10px;
+    display: none;
 /* fixare aggiungendo hover */
 }
 footer .player .volume{
@@ -305,11 +329,75 @@ footer .player .volume-bar-white{
     border: white solid 1.5px;
     border-radius: 10px;
     background-color: white;
+    position: relative;
 }
-
+footer .player .volume-bar-white .circle{
+    font-size: small;
+    position: absolute;
+    left: 50px;
+    top: -7px;
+    display: none;
+}
+/* fixare aggiungendo hover */
 
 
 /* media and animation */
+aside .menu a:hover{
+    color: white; 
+}
+aside .menu a:hover{
+    border-left: 2px solid #ADFF2F ;
+}
+aside .add p:hover{
+    color: white;
+}
+.gray>li:hover{
+    color: white;
+}
+.download span:hover{
+    color: white;
+}
+.banner .btn:hover{
+    scale: 1.2;
+    background-color: #486c12;
+}
+nav ul li a:hover{
+    color: white;
+}
+.cover:hover :first-child{
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+.cover:hover .play-btn{
+    display: unset;
+}
+footer .brano-text p:hover{
+    color: white;
+    text-decoration: underline;
+}
+footer .brano-icon .gray:hover{
+    color: white;
+}
+footer .comandi i:hover{
+    scale: 1.2;
+}
+footer .barra .bar-gray:hover .bar-white{
+    background-color: #ADFF2F;
+    border-color: #ADFF2F;
+}
+footer .barra .bar-gray:hover .circle{
+    display: unset;
+}
+footer .volume i:hover{
+    scale: 1.2;
+}
+footer .volume .volume-bar-gray:hover .volume-bar-white{
+    background-color: #ADFF2F;
+    border-color: #ADFF2F;
+}
+footer .volume .volume-bar-gray:hover .circle{
+    display: unset;
+}
 @media only screen and (max-width : 1440px) {
 
 }
@@ -339,8 +427,8 @@ footer .player .volume-bar-white{
     aside .small{
         display: unset;
     }
-    aside .big{
-        display: none;
+    .big,#big{
+        display: none ;
     }
     aside .menu,.download{
         display: flex;
